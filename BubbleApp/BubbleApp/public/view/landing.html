@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XM60XK9RQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-3XM60XK9RQ', { cookie_flags: 'SameSite=None;Secure' });
+        </script>
+
+        <!-- Title and Icon -->
+
+        <title>MiroTalk a Free Secure Video Calls, Chat & Screen Sharing.</title>
+        <link rel="shortcut icon" href="../images/logo.svg" />
+        <link rel="apple-touch-icon" href="../images/logo.svg" />
+
+        <!-- Meta Information -->
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+            name="description"
+            content="MiroTalk powered by WebRTC, Real-time Simple Secure Fast video calls, chat and screen sharing capabilities in the browser, from your mobile or desktop."
+        />
+        <meta
+            name="keywords"
+            content="webrtc, self hosted, voip, sip, real-time communications, chat, messaging, meet, webrtc stun, webrtc turn, video meeting, video chat, video conference, multi video chat, multi video conference, peer to peer, p2p, rtc, alternative to, zoom, microsoft teams, google meet, jitsi, meeting"
+        />
+
+        <!-- https://ogp.me -->
+
+        <meta property="og:type" content="app-webrtc" />
+        <meta property="og:site_name" content="MiroTalk" />
+        <meta property="og:title" content="Click the link to make a call." />
+        <meta
+            property="og:description"
+            content="MiroTalk calling provides real-time HD quality and latency simply not available with traditional technology."
+        />
+        <meta property="og:image" content="https://mirotalk.up.railway.app/images/preview.png" />
+        <meta property="og:url" content="https://mirotalk.herokuapp.com/" />
+
+        <!-- StyleSheet -->
+
+        <link rel="stylesheet" href="../css/landing.css" />
+    </head>
+    <body class="has-animations">
+        <div class="body-wrap">
+            <header class="site-header reveal-from-top">
+                <div class="container">
+                    <div class="site-header-inner">
+                        <div class="brand">
+                            <div class="m-0">
+                                <a href="/"><img src="../images/logo.svg" alt="Neon" width="32" height="32" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="site-content">
+                <section class="hero section illustration-section-01">
+                    <div class="container">
+                        <div class="hero-inner section-inner">
+                            <div class="split-wrap invert-mobile">
+                                <div class="split-item">
+                                    <div class="hero-content split-item-content center-content-mobile">
+                                        <h1 class="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="150">
+                                            MiroTalk<br />Free browser based real-time video calls.<br />
+                                            Simple, Secure, Fast.
+                                        </h1>
+                                        <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="300" style="color:#a1c2fc;">
+                                        Start smoothly your video call NOW <br>
+                                        and enjoy with your friends by sharing screens
+                                        </p>
+                                    </div>
+                                    <style>
+                                        @media (min-width: 641px) {
+                                            .hero .split-wrap .split-item {
+                                                min-height: 492px;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta section center-content-mobile reveal-from-bottom">
+                    <div class="container">
+                        <div class="cta-inner section-inner cta-split">
+                            <div class="cta-slogan">
+                                <h3 class="m-0">
+                                    Start Now <br>
+                                    Write the room name.
+                                    <br />
+                                   
+                                </h3>
+                            </div>
+                            <div class="cta-action">
+                                <div class="mb-24">
+                                    <label class="form-label screen-reader" for="roomName">mirotalk</label>
+                                    <div class="form-group-desktop">
+                                        <input class="form-input" type="text" id="roomName" value="mirotalk" />
+                                        <button
+                                            id="joinRoomButton"
+                                            class="button button-primary pulse"
+                                            onclick="joinRoom()"
+                                        >
+                                            Join Room
+                                        </button>
+                                        <script>
+                                            document.getElementById('roomName').onkeyup = (e) => {
+                                                if (e.keyCode === 13) {
+                                                    e.preventDefault();
+                                                    joinRoom();
+                                                }
+                                            };
+                                            function joinRoom() {
+                                                let roomName = document.getElementById('roomName').value;
+                                                window.location.href = '/join/' + roomName;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="features-tiles section center-content">
+                    <div class="container">
+                        <div class="features-tiles-inner section-inner has-top-divider">
+                            <div class="section-header">
+                                <div class="container-xs reveal-from-bottom" data-reveal-delay="650">
+                                    <h2 class="mt-0 mb-16">
+                                        infinite call time for Infinite number of conference rooms 
+                                    </h2>
+                                    <p class="m-0">
+                                        MiroTalk is assembled smoothly in an unexpected way. 
+                                        We left behind sluggish cumbersome servers, choosing shared calling.
+                                         We designed a stage with most extreme video quality least dormancy 
+                                         that settles on your decisions completely clear.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tiles-wrap">
+                                <div class="tiles-item reveal-from-right">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://static.thenounproject.com/png/22160-200.png"
+                                                    alt="Screen Sharing"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Screen Sharing</h4>
+                                            <p class="m-0 text-sm">
+                                                You can watch movies,presentations,even read books with others 
+                                                by using our properity of Share screen.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-left">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://cdn0.iconfinder.com/data/icons/computer-interface-glyph/128/1-46-512.png"
+                                                    alt="WebCam Streaming"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">WebCam Streaming</h4>
+                                            <p class="m-0 text-sm">
+                                                Put your webcam on to kill the distence, 
+                                                and enjoy the eye-to-eye communication with each other. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-right">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://static.thenounproject.com/png/2206184-200.png"
+                                                    alt="Chat Room"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Chat Room</h4>
+                                            <p class="m-0 text-sm">
+                                                Chat with others in the meeting, using  public chat or private, download the
+                                                meeting messages. An integrated emoji picker to show your feeling.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-left">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://cdn2.iconfinder.com/data/icons/news-broadcast-regular/64/camara_stand_tripod_broadcast_news_television_newscast-512.png"
+                                                    alt="Meeting Recording"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Meeting Recording</h4>
+                                            <p class="m-0 text-sm">
+                                                Save your important moment by Recording your Screen,
+                                                 WebCam and Audio to enjoy it in the futurewith others.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-right">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://cdn4.iconfinder.com/data/icons/education-line-vol-3/52/presentation__sign__business__Board__whiteboard__blackboard__woodboard-512.png"
+                                                    alt="Interactive Whiteboard"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Interactive Whiteboard</h4>
+                                            <p class="m-0 text-sm">
+                                                Explane and draw your thoughts and concepts smoothly 
+                                                to other participants in the meeting. 
+                                                using the Advanced collaborative whiteboard.
+                                              
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-left">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://cdn0.iconfinder.com/data/icons/dicticons-files-folders/32/file_transfer-512.png"
+                                                    alt="File Sharing"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">File Sharing</h4>
+                                            <p class="m-0 text-sm">
+
+                                                Share any types of files to all participants in the meeting, in total
+                                                security.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-right">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://th.bing.com/th/id/R.dd234b3596205d3548dde54dfadc39b8?rik=XVDAcMJkLPVW0w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_160769.png&ehk=DqrwyeWOkuaw9KEcLiCV9lKdMxhXMqFKpFDRuz%2fBUeY%3d&risl=&pid=ImgRaw&r=0"
+                                                    alt="Total Privacy"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Total Privacy</h4>
+                                            <p class="m-0 text-sm">
+                                                We don't collect or share any personal information.
+                                                Your data stays between you and your participants.
+                                                  We built it putting your privacy first.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tiles-item reveal-from-left">
+                                    <div class="tiles-item-inner">
+                                        <div class="features-tiles-item-header">
+                                            <div class="features-tiles-item-image mb-16">
+                                                <img
+                                                    src="https://cdn3.iconfinder.com/data/icons/e-commerce-171/128/e-commerce-15-512.png"
+                                                    alt="Maximum Security"
+                                                    width="72"
+                                                    height="72"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="features-tiles-item-content">
+                                            <h4 class="mt-0 mb-8">Maximum Security</h4>
+                                            <p class="m-0 text-sm">
+                                                End-to-end state-of-the-art encryption means your participants, Calls
+                                                any file shared are exactly encrypted.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team section center-content">
+                    <div class="container">
+                        <div class="team-inner section-inner has-top-divider">
+                            <div class="section-header center-content reveal-from-bottom">
+                                <div class="container-xs">
+                                    <h2 class="mt-0 mb-16">Supported Browsers</h2>
+                                </div>
+                            </div>
+                            <div class="tiles-wrap">
+                                <div class="tiles-item reveal-from-bottom">
+                                    <div class="tiles-item-inner">
+                                        <div class="team-item-header">
+                                            <div class="team-item-image mb-24">
+                                                <img
+                                                    src="../images/browsers.png"
+                                                    alt="Supported Browsers"
+                                                    width="auto"
+                                                    height="auto"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="team-item-content">
+                                            <h5 class="team-item-name mt-0 mb-4">
+                                                Chrome, Edge, Firefox, Opera, Safari, Brave and more.
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team section center-content">
+                    <div class="container">
+                        <div class="team-inner section-inner has-top-divider">
+                            <div class="section-header center-content reveal-from-bottom">
+                                <div class="container-xs">
+                                    <h2 class="mt-0 mb-16">Our team in GitHub</h2>
+                                </div>
+                            </div>
+
+                            <div class="tiles-wrap">
+                                <!-- Author -->
+                                <div class="tiles-item reveal-from-bottom">
+                                    <div class="tiles-item-inner">
+                                        <div class="team-item-header">
+                                            <div class="team-item-image mb-24">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-content">
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/ProjectManagementt/MeetApp"
+                                            >
+                                                <h5 class="team-item-name mt-0 mb-4">Project manegmant team</h5>
+                                            </a>
+                                            <div class="team-item-role text-xxs fw-500 tt-u text-color-primary mb-8">
+                                                Contain 7 members Under the supervision of Prof. Dr. Ensar GÜL
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="container">
+                        <div class="section-inner has-top-divider">
+                            <div class="container-xs">
+                                <div class="section-header center-content">
+                                    <h2 class="m-0">For smooth work and secure life.</h2>
+                                </div>
+                                <div class="center-content">
+                                    <a
+                                        class="button button-primary button-wide-mobile pulse"
+                                        style="
+                                            border: 0;
+                                            background: linear-gradient(100deg, #8106a3 0, #ff5fc4 75%, #7f757d 100%);
+                                        "
+                                        href="/newcall"
+                                        >Start now</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer center-content-mobile">
+                <div class="container">
+                    <div class="site-footer-inner">
+                        <div class="footer-top space-between text-xxs">
+                            <div class="brand">
+                                <a href="/"><img src="../images/logo.svg" alt="Neon" width="32" height="32" /></a>
+                            </div>
+                            <div class="footer-social">
+                                <ul class="list-reset">
+                                    <li>
+                                        <a target="_blank" href="https://github.com/YousraAlaklouk">
+                                            <svg
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <title>Leader's GitHub</title>
+                                                <path
+                                                    d="M7.95 0C3.578 0 0 3.578 0 7.95c0 3.479 2.286 6.46 5.466 7.553.397.1.497-.199.497-.397v-1.392c-2.187.497-2.683-.994-2.683-.994-.398-.894-.895-1.192-.895-1.192-.696-.497.1-.497.1-.497.795.1 1.192.795 1.192.795.696 1.292 1.888.894 2.286.696.1-.497.298-.895.497-1.093-1.79-.2-3.578-.895-3.578-3.976 0-.894.298-1.59.795-2.087-.1-.198-.397-.993.1-2.086 0 0 .695-.2 2.186.795a6.408 6.408 0 0 1 1.987-.299c.696 0 1.392.1 1.988.299 1.49-.994 2.186-.795 2.186-.795.398 1.093.199 1.888.1 2.086.496.597.795 1.292.795 2.087 0 3.081-1.889 3.677-3.677 3.876.298.398.596.895.596 1.59v2.187c0 .198.1.496.596.397C13.714 14.41 16 11.43 16 7.95 15.9 3.578 12.323 0 7.95 0z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/yosraa.yaklook/">
+                                            <svg
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <title>Leader's Facebook</title>
+                                                <path
+                                                    d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="mailto:soso4514@gmail.com">
+                                            <svg
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <title>Leader's Email</title>
+                                                <path
+                                                    d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
+                                                    fill="#0270D7"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-bottom space-between text-xxs invert-order-desktop">
+                            <nav class="footer-nav">
+                                <ul class="list-reset">
+                                    <li>
+                                        <a href="/privacy">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer-copyright">&copy; 2022 MiroTalk, all rights reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script defer src="../js/landing.js"></script>
+        <script defer src="../js/newRoom.js"></script>
+    </body>
+</html>
